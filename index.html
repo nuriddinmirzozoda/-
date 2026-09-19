@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Зодрӯзат муборак, Самиаллоҳ</title>
+
+<meta name="description" content="Табрикнома барои Самиаллоҳ — 19.09.2007.">
+<meta name="theme-color" content="#0b0716">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Зодрӯзат муборак, Самиаллоҳ">
+<meta property="og:description" content="Як мактуб ва якчанд лаҳза. Барои ту.">
+<meta property="og:image" content="images/1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Prata&family=Noto+Serif+SC:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="sky" id="sky" aria-hidden="true"></div>
+
+<button class="icon-btn music" id="musicBtn" type="button" aria-pressed="false" aria-label="Оҳангро фаъол кардан">
+  <i class="fa-solid fa-music" aria-hidden="true"></i>
+</button>
+
+<!-- ============ ПАРДАИ 1 — КОНВЕРТ ============ -->
+<section class="act act-envelope is-live" id="act1" aria-label="Конверт">
+  <div class="envelope-wrap">
+    <div class="envelope" id="envelope" role="button" tabindex="0"
+         aria-label="Конвертро кушодан" aria-expanded="false">
+      <div class="env-back"></div>
+      <div class="env-note">
+        <span class="zh">生日快乐</span>
+        <b id="noteName">—</b>
+        <small>як мактуб ва якчанд лаҳза</small>
+      </div>
+      <div class="env-pocket"></div>
+      <div class="env-left"></div>
+      <div class="env-right"></div>
+      <div class="env-flap"></div>
+      <div class="env-seal"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+    </div>
+  </div>
+  <p class="hint" id="hint">кушода шуда истодааст…</p>
+</section>
+
+<!-- ============ ПАРДАИ 2 — МАКТУБ ============ -->
+<section class="act act-letter" id="act2" aria-label="Мактуб">
+  <article class="paper">
+    <header class="paper-head">
+      <p class="dateline"><span id="dob">19.09.2007</span> — <span id="today">19.09.2026</span></p>
+      <h1 id="paperTitle">Зодрӯзат муборак</h1>
+      <p class="facts" id="facts"></p>
+    </header>
+
+    <div class="type" id="type" aria-live="polite"></div>
+
+    <p class="sign" id="sign">— <span id="fromName">—</span></p>
+
+    <div class="paper-tools">
+      <button class="btn btn-ghost" id="skipBtn" type="button">
+        <i class="fa-solid fa-forward" aria-hidden="true"></i> Зудтар
+      </button>
+      <button class="btn btn-gold" id="toReelBtn" type="button" hidden>
+        <i class="fa-solid fa-images" aria-hidden="true"></i> Аксҳоро дидан
+      </button>
+    </div>
+  </article>
+</section>
+
+<!-- ============ ПАРДАИ 3 — АКСҲО ============ -->
+<section class="act act-reel" id="act3" aria-label="Монтажи аксҳо">
+  <div class="reel">
+    <div class="bars" id="bars"></div>
+
+    <div class="stage" id="stage">
+      <div id="slides"></div>
+      <p class="caption" id="captionLive" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"></p>
+
+      <button class="stage-btn prev" id="prevBtn" type="button" aria-label="Акси пешина">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <button class="stage-btn next" id="nextBtn" type="button" aria-label="Акси навбатӣ">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="reel-tools">
+      <p class="counter" id="counter">1 / 10</p>
+      <button class="icon-btn" id="playBtn" type="button" aria-label="Таваққуф">
+        <i class="fa-solid fa-pause" aria-hidden="true"></i>
+      </button>
+      <button class="icon-btn" id="endBtn" type="button" aria-label="Ба охир">
+        <i class="fa-solid fa-forward-step" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПАРДАИ 4 — ТАБРИКОТИ ОХИРИН ============ -->
+<section class="act act-finale" id="act4" aria-label="Табрикот">
+  <div class="finale">
+    <p class="zh big" aria-hidden="true">生日快乐</p>
+    <h2 id="finaleText">—</h2>
+    <p class="finale-sub" id="finaleSub"></p>
+    <div class="finale-tools">
+      <button class="btn btn-gold" id="confettiBtn" type="button">
+        <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Салют
+      </button>
+      <button class="btn btn-ghost" id="againBtn" type="button">
+        <i class="fa-solid fa-rotate-left" aria-hidden="true"></i> Аз нав
+      </button>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
